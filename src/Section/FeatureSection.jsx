@@ -9,7 +9,7 @@ function FeatureSection() {
         <section className="w-[80%] md:w-[80%] mx-auto py-2">
             <Swiper
                 modules={[Autoplay]}
-                autoplay={{ delay: 50000, disableOnInteraction: false }}
+                autoplay={{ delay: 6000, disableOnInteraction: false }}
                 loop={true}
                 spaceBetween={20}
                 slidesPerView={1}
