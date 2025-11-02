@@ -74,13 +74,14 @@ const Navbar = () => {
                         {/* Desktop Nav */}
                         <div className="max-w-6xl mx-4 px-6 py-4 flex items-center justify-between">
                             <ul className="hidden md:flex flex-wrap space-x-6 text-base font-medium text-gray-700 dark:text-gray-300 font-NotoSerif">
-                                {navLinks.map(({ label, to }) => (
+                                {navLinks.map(({ label, to, activatable, exact }) => (
                                     <li key={label}>
                                         <NavLink
                                             to={to}
+                                            end={exact}
                                             className={({ isActive }) =>
                                                 `block cursor-pointer transition hover:text-red-600 dark:hover:text-red-400 ${
-                                                    isActive
+                                                    isActive && activatable
                                                         ? "line-through text-black dark:text-white"
                                                         : "text-gray-800 dark:text-gray-100"
                                                 }`

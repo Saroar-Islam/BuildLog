@@ -27,13 +27,13 @@ import {
 } from "../assets";
 
 export const navLinks = [
-    { label: "Home", to: "/" },
-    { label: "All Post", to: "/allpost" },
-    { label: "Business", to: "/allpost/Business" },
-    { label: "Technology", to: "/allpost/Technology" },
-    { label: "Economy", to: "/allpost/Economy" },
-    { label: "Fashion", to: "/allpost/Fashion" },
-    { label: "Author", to: "/allpost/Author" },
+    { label: "Home", to: "/", activatable: true },
+    { label: "All Post", to: "/allpost", activatable: true, exact: true },
+    { label: "Business", to: "/allpost/Business", activatable: true, exact: true },
+    { label: "Technology", to: "/allpost/Technology", activatable: true, exact: true },
+    { label: "Economy", to: "/allpost/Economy", activatable: true, exact: true },
+    { label: "Fashion", to: "/allpost/Fashion", activatable: true, exact: true },
+    { label: "Author", to: "/allpost/Author", activatable: true, exact: true },
 ];
 
 export const socialLinks = [
@@ -237,7 +237,7 @@ export const businessData = [
         date: "SEP 2, 2025",
         category: "Business",
         image: chipShortageImg,
-        to: "/allpost/Technology/crypto",
+        to: "allpost/Business/crypto",
     },
 
     {
@@ -245,21 +245,21 @@ export const businessData = [
         date: "OCT 12, 2025",
         category: "Business",
         image: remoteWorkTrendsImg,
-        to: "futureOfWork",
+        to: "allpost/Business/crypto",
     },
     {
         title: "Navigating Inflation: Strategies for Small Business Survival",
         date: "NOV 8, 2025",
         category: "Business",
         image: smallBusinessImg,
-        to: "financeTips",
+        to: "allpost/Business/crypto",
     },
     {
         title: "E-Commerce Boom: What It Means for Traditional Retail",
         date: "DEC 3, 2025",
         category: "Business",
         image: ecommerceBoomImg,
-        to: "retailShift",
+        to: "allpost/Business/crypto",
     },
 ];
 
