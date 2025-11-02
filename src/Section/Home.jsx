@@ -24,7 +24,7 @@ function Home() {
                 <FeatureSection />
             </section>
 
-            <section className="w-[80%] mx-auto mt-20 font-popins font-medium">
+            <section className="w-[80%] mx-auto mt-10 font-popins font-medium">
                 <Breadcrumb />
             </section>
 
