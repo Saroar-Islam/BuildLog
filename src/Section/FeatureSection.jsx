@@ -6,7 +6,7 @@ import "swiper/css";
 
 function FeatureSection() {
     return (
-        <section className="px-1 py-2">
+        <section className="w-[80%] md:w-[80%] mx-auto py-2">
             <Swiper
                 modules={[Autoplay]}
                 autoplay={{ delay: 50000, disableOnInteraction: false }}
@@ -16,8 +16,9 @@ function FeatureSection() {
                 breakpoints={{
                     640: { slidesPerView: 1 },
                     768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
-                    1280: { slidesPerView: 4 },
+                    // 1024: { slidesPerView: 2 },
+                    1280: { slidesPerView: 3 },
+                    1536: { slidesPerView: 4 },
                 }}
             >
                 {featureData.map((item, index) => (

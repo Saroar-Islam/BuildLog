@@ -7,7 +7,7 @@ import { navLinks, socialLinks } from "../Data/data";
 import logoLight from "../assets/logo/logo-light.png";
 import logoDark from "../assets/logo/logo-dark.png";
 import HrTag from "./HrTag";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -46,8 +46,8 @@ const Navbar = () => {
     };
 
     return (
-        <section className="fixed top-0 z-999 mb-2 bg-whiteMist dark:bg-blackNeutral w-full h-24">
-            <nav ref={navRef} className="px-5 md:px-20 mt-2">
+        <section className="block md:fixed md:top-0 md:z-50  bg-whiteMist dark:bg-blackNeutral w-full">
+            <nav ref={navRef} className="w-[80%] m-auto mt-2">
                 <div className="w-full px-0 py-2 md:py-0 flex justify-between items-center  transition-colors duration-300">
                     <div className="flex justify-around items-center">
                         {/* logos  */}
@@ -76,19 +76,25 @@ const Navbar = () => {
                             <ul className="hidden md:flex flex-wrap space-x-6 text-base font-medium text-gray-700 dark:text-gray-300 font-NotoSerif">
                                 {navLinks.map(({ label, to }) => (
                                     <li key={label}>
-                                        <Link
+                                        <NavLink
                                             to={to}
-                                            className="block hover:text-black dark:hover:text-white cursor-pointer transition"
+                                            className={({ isActive }) =>
+                                                `block cursor-pointer transition hover:text-red-600 dark:hover:text-red-400 ${
+                                                    isActive
+                                                        ? "line-through text-black dark:text-white"
+                                                        : "text-gray-800 dark:text-gray-100"
+                                                }`
+                                            }
                                         >
                                             {label}
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                 ))}
                             </ul>
                         </div>
                     </div>
 
-                    {/* media , search Icons, theme button */}
+                    {/* desktop media , search Icons, theme button */}
                     <div className="flex items-center space-x-4">
                         {/* media icons desktop*/}
                         <div className="hidden md:flex space-x-4 text-gray-600 dark:text-gray-300">
