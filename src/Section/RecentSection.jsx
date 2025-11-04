@@ -3,6 +3,7 @@ import logoDark from "../assets/logo/logo-dark.png";
 import { RecentNewsData, socialLinks } from "../Data/data";
 import RecentNewsCard from "../components/RecentNewsCard";
 import { CgMenuRound } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 const RecentSection = () => {
     return (
@@ -36,7 +37,6 @@ const RecentSection = () => {
                 </div>
                 <h3 className="mb-8 font-popins text-2xl text-center">“Your daily dose of clarity.”</h3>
 
-                
                 {/* media icons */}
                 <div className="flex justify-center items-center space-x-2 text-gray-600 dark:text-gray-300">
                     {socialLinks.map(({ label, href, icon: Icon, hoverColor }) => (
@@ -60,15 +60,15 @@ const RecentSection = () => {
                     </div>
 
                     <div className="mt-1">
-                        <a
-                            href="/allpost"
+                        <Link
+                            to="allpost"
                             className="font-popins text-[12px] text-gray-500 group inline-flex items-center"
                         >
                             <span className="transition-all duration-400 transform group-hover:translate-x-[-30px] group-hover:text-red-600">
                                 View All
                             </span>
                             <CgMenuRound className="absolute right-6 h-5 w-5 transform translate-x-[0px] group-hover:translate-x-[-10px] opacity-0 transition-all duration-400  group-hover:opacity-100 group-hover:text-red-600" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <hr className="h-[0.5px] mb-10 mx-2 bg-gray-800 dark:bg-gray-300  border-0" />

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function RecentNewsCard({ title, date, category, image, to }) {
     return (
-        <a href={to} className="block mb-10">
+        <Link to={to} className="block mb-10">
             <div className="flex justify-start items-start rounded-lg ">
                 <div className="w-[80px] aspect-square shrink-0 pt-2 ">
                     <img src={image} alt={title} className="w-14 h-14 object-cover rounded-full" />
@@ -14,7 +14,7 @@ function RecentNewsCard({ title, date, category, image, to }) {
                     </span>
                 </div>
             </div>
-        </a>
+        </Link>
     );
 }
 
