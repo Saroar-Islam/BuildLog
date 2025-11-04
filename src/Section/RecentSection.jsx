@@ -61,7 +61,7 @@ const RecentSection = () => {
 
                     <div className="mt-1">
                         <Link
-                            to="allpost"
+                            to="/allpost"
                             className="font-popins text-[12px] text-gray-500 group inline-flex items-center"
                         >
                             <span className="transition-all duration-400 transform group-hover:translate-x-[-30px] group-hover:text-red-600">
