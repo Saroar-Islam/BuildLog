@@ -1,6 +1,8 @@
 https://build-log.netlify.app/
 
-img <src = "https://github.com/Saroar-Islam/BuildLog/blob/main/build-logProjectView.jpeg"/>
+ 
+
+<img src ="https://github.com/Saroar-Islam/BuildLog/blob/main/build-logProjectView.jpeg"/>
 
 # React + Vite
 
