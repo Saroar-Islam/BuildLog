@@ -1,3 +1,7 @@
+https://build-log.netlify.app/
+
+img <src = "https://github.com/Saroar-Islam/BuildLog/blob/main/build-logProjectView.jpeg"/>
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
